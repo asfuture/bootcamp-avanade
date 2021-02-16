@@ -1,2 +1,2 @@
 # bootcamp-avanade
- Recriando a interface do Netflix junto com a Digital Innovation One.
+ Recriando a interface da Netflix junto com a Digital Innovation One.
