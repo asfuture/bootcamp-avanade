@@ -16,6 +16,7 @@
         <header>
             <div class="container">
                 <h2 class="logo">NETFLIX</h2>
+                <!--Menu principal-->
                 <nav>
                     <a href="#">Inicio</a>
                     <a href="#">Séries</a>
@@ -25,6 +26,7 @@
             </div>
         </header>
         <main>
+            <!--Capa do filme principal-->
             <div class="filme-principal">
                 <div class="container">
                     <h3 class="titulo">SUITS</h3>
@@ -43,6 +45,7 @@
                 </div>
             </div>
         </main>
+        <!--Demais filmes-->
         <div class="carrosel-filmes">
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -89,10 +92,13 @@
         <script src="js/owl/owl.carousel.min.js"></script>
         <script src="js/owl/setup.js"></script>
 
+        <!--Modal com informações do filme principal da capa-->
         <div id="modal">
             <div class="modal-filmes">
+                <!--Video do youtube-->
                 <iframe width="900" height="500" src="https://www.youtube.com/embed/ImEnWAVRLU0?controls=0&amp;start=18" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
             </div>
+            <!--Controle dos botões do modal e video do youtube-->
                <div class="button-controle">
                 <a href="https://www.netflix.com/watch/70283145?trackId=14277283&tctx=-97%2C-97%2C%2C%2C%2C"><button class="assistir"><i class="fas fa-play"></i> Assistir</button> </a>
                 <button onclick="adicionar_filme()" class="plus">+</button>
@@ -102,6 +108,7 @@
                 <button  onclick="sem_audio()" class="volume_baixo"><i class="fas fa-volume-mute"></i></button>
                 <button class="close" onclick="sair()">&times;</i></button>
                </div> 
+               <!--Descrição do primeiro episodio e o nomes do elenco-->
                <div class="resumo">
                    <div class="temporada">
                        <div class="ano-temporada">
@@ -130,6 +137,7 @@
                         </div>
                    </div>
             </div>
+            <!--Escolhe temporada-->
             <div class="temporada-episodio">
                 <div class="episodios">
                     <p class="p-episodio">Episódio</p>
@@ -147,6 +155,7 @@
                     </select>
                 </div>
             </div> 
+            <!--Todos os episodios de cada temporada-->
             <div class="episodio-item">
                 <div class="ep">
                     <h3>1</h3>
@@ -412,6 +421,7 @@
                         </div>
                         
                     </div>
+                    <!--Sobre o elenco-->
                     <div class="sobre-suits">
                         <p class="titulo-sobre-suits">Sobre Suits</p>
                         <div>
