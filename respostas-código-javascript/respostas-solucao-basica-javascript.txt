@@ -1,0 +1,100 @@
+RESPOSTAS DO DESAFIO SOLUÇÃO DE PROBLEMAS BÁSICOS EM JAVASCRIPT
+
+//Dividindo X por Y
+
+let limit = parseInt(gets());
+for (let i = 0; i < limit; i++) {
+    let line = gets().split(" ");
+    let X = parseInt(line[0]);
+    let Y = parseInt(line[1]);
+    if (Y == 0) {
+        console.log("divisao impossivel");
+    } else {
+        let divisao = parseFloat(X / Y).toFixed(1); //complete com o sinal da operação faltante entre x e y
+        console.log(divisao);
+    }
+}
+
+//Desafios Blods
+
+// complete as variaveis necessarias
+var n = parseInt(gets());
+
+while ( n > 0) { //complete o codigo
+  var c = parseFloat(gets());
+  let dias = 0; //atribua o valor correto a variavel
+  while ( c > 1  ) { // complete o while
+    // complete o codigo
+    c = c/2;
+    dias++;
+  }
+  console.log( `${dias} dias`); //complete o código para a saída
+  n--;
+}
+
+
+//Desafios Tipo de Combustível
+
+//continue a solução
+
+let alcohol = 0;
+let gasoline = 0;
+let diesel = 0;
+let code = 0;
+
+  while (code != 4) {
+    code = Number(gets());
+    switch (code) {
+       case 1:
+       alcohol ++;
+        break;
+      case 2:
+        gasoline ++;
+        break;
+     case 3:
+       diesel ++;
+        break;
+     case 4:
+    break;
+     }
+    }
+  
+console.log("MUITO OBRIGADO");
+console.log("Alcool: " + alcohol);
+console.log("Gasolina: " + gasoline);
+console.log("Diesel: " + diesel);
+
+
+
+//desafios folha de pagamento
+
+let valor1 = parseInt(gets());
+let valor2 = parseInt(gets());
+let valor3 = parseFloat(gets());
+let salary = parseFloat(valor2*valor3).toFixed(2); // Digite aqui o calculo do salário
+console.log("NUMBER = " + valor1);
+console.log("SALARY = U$ " + salary);
+
+
+
+//Desafios contagem de notas
+
+let notas = [100, 50, 20, 10, 5, 2, 1];
+let nnotas = [0, 0, 0, 0, 0, 0, 0];
+let quantia = parseInt(gets());
+let resto = quantia;
+
+for (let i=0; i < notas.length; i++) {
+  while (resto >= notas[i]){
+    resto -= notas[i];
+    nnotas[i]++;
+  }
+}
+console.log(quantia);
+console.log(nnotas[0] + " nota(s) de R$ 100,00");
+console.log(nnotas[1] + " nota(s) de R$ 50,00");
+console.log(nnotas[2] + " nota(s) de R$ 20,00");
+console.log(nnotas[3] + " nota(s) de R$ 10,00");
+console.log(nnotas[4] + " nota(s) de R$ 5,00");
+console.log(nnotas[5] + " nota(s) de R$ 2,00");
+console.log(nnotas[6] + " nota(s) de R$ 1,00");
