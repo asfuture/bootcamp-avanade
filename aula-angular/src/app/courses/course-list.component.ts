@@ -11,7 +11,7 @@ export class CourseListComponent implements OnInit {
 
   _courses:Course [] = [];
 
- _filterBy: any;
+  public _filterBy!: string;
 
   constructor(private courseService: CourseService){}
 
@@ -41,6 +41,7 @@ export class CourseListComponent implements OnInit {
 
   set filter(value:string){
     this._filterBy = value;
+
     this.filteredCourses = this._courses.filter((course:Course)=>course.name.toLocaleLowerCase().indexOf(this._filterBy.toLocaleLowerCase()) > -1);
   }
   get filter() {
